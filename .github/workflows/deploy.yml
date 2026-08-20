@@ -1,0 +1,52 @@
+name: Desplegar sitio VitePress
+
+on:
+  push:
+    branches: [main] # Se activa automáticamente al hacer push a main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm # Cambia a yarn o pnpm si usas otros gestores
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Compilar sitio web
+        run: npm run docs:build # Asegúrate de que este comando exista en tu package.json
+
+      - name: Subir artefacto para Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Si tu carpeta .vitepress está en la raíz, cambia esto a: .vitepress/dist
+          path: docs/.vitepress/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Desplegar a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

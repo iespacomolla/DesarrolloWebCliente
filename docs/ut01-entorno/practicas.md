@@ -1,0 +1,20 @@
+# Prácticas UT01: Entorno de trabajo
+
+## PRÁCTICA 1.01 Entorno de trabajo
+
+Antes de empezar con el módulo es necesario configurar el entorno de trabajo a nuestra conveniencia. Realiza las siguientes configuraciones en tu espacio de trabajo antes de continuar con el tema siguiente.
+
+- Revisa que el siguiente software está disponible en tu equipo:
+  - VisualStudio Code
+  - NPM
+  - Mozilla Firefox
+  - Google Chrome
+- Enlaza tu cuenta de Git con Visual Studio Code y crea un repositorio para las prácticas de este módulo.
+- Ajusta las extensiones del programa Visual Studio Code para crear un entorno de desarrollo óptimo. Podrás elegir las extensiones que estimes oportunas, pero deberás asegúrate de que dispongas, como mínimo, de las siguientes:
+  - un farmateador de código (Prettier puede ser una buena opción),
+  - generadores de código automático para JavaScript y React (JavaScript code snippets o ES7 React/Redux/React-Native snippets por ejemplo),
+  - por último, no obligatorio pero sí recomendable, iconos para identificar los tipos de archivos en el editor (Material Icon Theme es una extensión interesante),
+- Prepara un proyecto para las prácticas de Vanilla y comprueba que todo está funcionando como debe. Arranca el servidor de prueba y haz algún cambio en el código de muestra. Elimina el código de prueba generado con el asistente.
+- Enlaza un fichero denominado main.js (o el nombre que estimes oportuno) que será en único enlace al fichero HTML. Utiliza módulos para ello.
+- Utiliza el fichero Calculadora.js para importar las funciones en el fichero main.js y usa alguna de ellas. Comprueba el resultado por consola.
+- Crea una aplicación web (proyecto) en React (nombre a tu discreción) y comprueba que arranca y que todo funciona de forma adecuada.

@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/DesarrolloWebCliente/',
+  base: "/DesarrolloWebCliente/",
   lang: "es-ES",
-  title: "DWC - Desarrollo Web Cliente",
+  title: "Desarrollo Web Cliente",
   description: "Apuntes, teoría, apartados y listado de prácticas de DWC",
   cleanUrls: true,
   ignoreDeadLinks: true,
@@ -13,7 +13,10 @@ export default defineConfig({
       {
         text: "Temas",
         items: [
-          { text: "UT01: Entorno de trabajo", link: "/ut01-entorno/" },
+          {
+            text: "UT01: Entorno de trabajo",
+            link: "/ut01-entorno/",
+          },
           {
             text: "UT02: Sintaxis, funciones y componentes",
             link: "/ut02-sintaxis/",
@@ -22,7 +25,10 @@ export default defineConfig({
             text: "UT03: Objetos predefinidos y hooks",
             link: "/ut03-objetos-hooks/",
           },
-          { text: "UT04: Document Object Model", link: "/ut04-dom/" },
+          {
+            text: "UT04: Document Object Model",
+            link: "/ut04-dom/",
+          },
           {
             text: "UT05: Eventos y Formularios",
             link: "/ut05-eventos-formularios/",
@@ -31,7 +37,7 @@ export default defineConfig({
           { text: "UT07: Clases en JavaScript", link: "/ut07-clases/" },
         ],
       },
-      {
+      /*  {
         text: "Prácticas y Ejercicios",
         items: [
           { text: "Prácticas UT01", link: "/ut01-entorno/practicas" },
@@ -45,7 +51,7 @@ export default defineConfig({
           { text: "Prácticas UT06", link: "/ut06-asincronia/practicas" },
           { text: "Prácticas UT07", link: "/ut07-clases/practicas" },
         ],
-      },
+      }, */
     ],
     sidebar: [
       {
@@ -142,7 +148,7 @@ export default defineConfig({
           },
           {
             text: "Prácticas UT01",
-            link: "/ut01-entorno/practicas",
+            //link: "/ut01-entorno/practicas",
           },
         ],
       },
@@ -280,7 +286,7 @@ export default defineConfig({
           },
           {
             text: "Prácticas UT02",
-            link: "/ut02-sintaxis/practicas",
+            //link: "/ut02-sintaxis/practicas",
           },
         ],
       },
@@ -368,7 +374,7 @@ export default defineConfig({
           },
           {
             text: "Prácticas UT03",
-            link: "/ut03-objetos-hooks/practicas",
+            //link: "/ut03-objetos-hooks/practicas",
           },
         ],
       },
@@ -446,7 +452,7 @@ export default defineConfig({
           },
           {
             text: "Prácticas UT04",
-            link: "/ut04-dom/practicas",
+            //link: "/ut04-dom/practicas",
           },
         ],
       },
@@ -566,7 +572,7 @@ export default defineConfig({
           },
           {
             text: "Prácticas UT05",
-            link: "/ut05-eventos-formularios/practicas",
+            //link: "/ut05-eventos-formularios/practicas",
           },
         ],
       },
@@ -712,7 +718,7 @@ export default defineConfig({
           },
           {
             text: "Prácticas UT06",
-            link: "/ut06-asincronia/practicas",
+            //link: "/ut06-asincronia/practicas",
           },
         ],
       },
@@ -792,7 +798,7 @@ export default defineConfig({
           },
           {
             text: "Prácticas UT07",
-            link: "/ut07-clases/practicas",
+            //link: "/ut07-clases/practicas",
           },
         ],
       },

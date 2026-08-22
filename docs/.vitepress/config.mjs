@@ -55,8 +55,23 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: "Normas de codificación",
+        collapsed: true,
+        items: [
+          {
+            text: "Normas para Javascript Vanilla",
+            link: "/ut00-general/normas-vanilla.md",
+          },
+          {
+            text: "Normas para React",
+            link: "/ut00-general/normas-react.md",
+          },
+        ],
+      },
+
+      {
         text: "UT01: Entorno de trabajo",
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: "Resumen",
@@ -149,6 +164,13 @@ export default defineConfig({
           {
             text: "Prácticas UT01",
             //link: "/ut01-entorno/practicas",
+            collapsed: true,
+            items: [
+              {
+                text: "1.01 Entorno de trabajo",
+                link: "/ut01-entorno/practicas/p1-01.md",
+              },
+            ],
           },
         ],
       },
@@ -287,6 +309,21 @@ export default defineConfig({
           {
             text: "Prácticas UT02",
             //link: "/ut02-sintaxis/practicas",
+            collapsed: true,
+            items: [
+              /* {
+                text: "2.01 Empezando con la sintaxis",
+                link: "/ut02-sintaxis/practicas/p2-01.md",
+              },
+              {
+                text: "2.02 Más sintaxis con numericos",
+                link: "/ut02-sintaxis/practicas/p2-02.md",
+              },
+              {
+                text: "2.03 Mi primer componente en React",
+                link: "/ut02-sintaxis/practicas/p2-03r.md",
+              }, */
+            ],
           },
         ],
       },
@@ -375,6 +412,41 @@ export default defineConfig({
           {
             text: "Prácticas UT03",
             //link: "/ut03-objetos-hooks/practicas",
+            collapsed: true,
+            items: [
+              /* {
+                text: "3.01 Más sintaxis con funciones y arrays",
+                link: "/ut03-objetos-hooks/practicas/p3-01.md",
+              },
+              {
+                text: "3.02 Objetos predefinidos",
+                link: "/ut03-objetos-hooks/practicas/p3-02.md",
+              },
+              {
+                text: "3.03 Funciones y objetos",
+                link: "/ut03-objetos-hooks/practicas/p3-03.md",
+              },
+              {
+                text: "3.04 Manejo de objetos JSON y arrays (spread)",
+                link: "/ut03-objetos-hooks/practicas/p3-04.md",
+              },
+              {
+                text: "3.05 Jugando con la sintaxis (Buscaminas)",
+                link: "/ut03-objetos-hooks/practicas/p3-05.md",
+              },
+              {
+                text: "3.06 Mi primera aplicación en React",
+                link: "/ut03-objetos-hooks/practicas/p3-06.md",
+              },
+              {
+                text: "3.07 Estados en React",
+                link: "/ut03-objetos-hooks/practicas/p3-07.md",
+              },
+              {
+                text: "3.08 Listado con estado en React",
+                link: "/ut03-objetos-hooks/practicas/p3-08.md",
+              }, */
+            ],
           },
         ],
       },
@@ -453,6 +525,37 @@ export default defineConfig({
           {
             text: "Prácticas UT04",
             //link: "/ut04-dom/practicas",
+            collapsed: true,
+            items: [
+              /*  {
+                text: "4.01 DOM",
+                link: "ut04-dom/practicas/p4-01.md",
+              },
+              {
+                text: "4.02 DOM II, Hell on Earth",
+                link: "ut04-dom/practicas/p4-02.md",
+              },
+              {
+                text: "4.03 Gestor de tareas",
+                link: "ut04-dom/practicas/p4-03.md",
+              },
+              {
+                text: "4.04 useRef en React",
+                link: "ut04-dom/practicas/p4-04.md",
+              },
+              {
+                text: "4.05 Películas con useRef",
+                link: "ut04-dom/practicas/p4-05.md",
+              },
+              {
+                text: "4.06 Interfaces con rutas en React",
+                link: "ut04-dom/practicas/p4-06.md",
+              },
+              {
+                text: "4.07 Rutas de película en React",
+                link: "ut04-dom/practicas/p4-07.md",
+              }, */
+            ],
           },
         ],
       },
@@ -573,6 +676,41 @@ export default defineConfig({
           {
             text: "Prácticas UT05",
             //link: "/ut05-eventos-formularios/practicas",
+            collapsed: true,
+            items: [
+              /* {
+                text: "5.01 Eventos",
+                link: "/ut05-eventos-formularios/practicas/p5-01.md",
+              },
+              {
+                text: "5.02 Más eventos",
+                link: "/ut05-eventos-formularios/practicas/p5-02.md",
+              },
+              {
+                text: "5.03 Pintarajea",
+                link: "/ut05-eventos-formularios/practicas/p5-03.md",
+              },
+              {
+                text: "5.04 Rompecabezas",
+                link: "/ut05-eventos-formularios/practicas/p5-04.md",
+              },
+              {
+                text: "5.05 Gestor de tareas II, el regreso",
+                link: "/ut05-eventos-formularios/practicas/p5-05.md",
+              },
+              {
+                text: "5.06 Mi colección de discos",
+                link: "/ut05-eventos-formularios/practicas/p5-06.md",
+              },
+              {
+                text: "5.07 useEffect en React",
+                link: "/ut05-eventos-formularios/practicas/p5-07.md",
+              },
+              {
+                text: "5.08 Formularios controlados en React",
+                link: "/ut05-eventos-formularios/practicas/p5-08.md",
+              }, */
+            ],
           },
         ],
       },
@@ -719,6 +857,57 @@ export default defineConfig({
           {
             text: "Prácticas UT06",
             //link: "/ut06-asincronia/practicas",
+            collapsed: true,
+            items: [
+              /* {
+                text: "6.01 Asincronismo básico",
+                link: "/ut06-asincronia/practicas/p6-01.md",
+              },
+              {
+                text: "6.02 Enciclopedia galáctica básica en Vanilla",
+                link: "/ut06-asincronia/practicas/p6-02.md",
+              },
+              {
+                text: "6.03 Asincronismo en React",
+                link: "/ut06-asincronia/practicas/p6-03.md",
+              },
+              {
+                text: "6.04 Enciclopedia completa de Star Wars en React",
+                link: "/ut06-asincronia/practicas/p6-04.md",
+              },
+              {
+                text: "6.05 Asincronismo libre en React",
+                link: "/ut06-asincronia/practicas/p6-05.md",
+              },
+              {
+                text: "6.06 CRUD con fetch",
+                link: "/ut06-asincronia/practicas/p6-06.md",
+              },
+              {
+                text: "6.07 Supabase - Lista de la compra",
+                link: "/ut06-asincronia/practicas/p6-07.md",
+              },
+              {
+                text: "6.08 Supabase - Autentificación de usuarios",
+                link: "/ut06-asincronia/practicas/p6-08.md",
+              },
+              {
+                text: "6.09 Supabase - Listado de productos",
+                link: "/ut06-asincronia/practicas/p6-09.md",
+              },
+              {
+                text: "6.10 Supabase - Gestión de productos",
+                link: "/ut06-asincronia/practicas/p6-10.md",
+              },
+              {
+                text: "6.11 Supabase - Creación de listados",
+                link: "/ut06-asincronia/practicas/p6-11.md",
+              },
+              {
+                text: "6.12 Supabase - Roles de usuario",
+                link: "/ut06-asincronia/practicas/p6-12.md",
+              }, */
+            ],
           },
         ],
       },
@@ -799,11 +988,18 @@ export default defineConfig({
           {
             text: "Prácticas UT07",
             //link: "/ut07-clases/practicas",
+            collapsed: true,
+            items: [
+              /*  {
+                text: "7.01 Módulos con clase(s)",
+                link: "/ut07-clases/practicas/p7-01.md",
+              }, */
+            ],
           },
         ],
       },
     ],
-    search: {
+    /* search: {
       provider: "local",
       options: {
         locales: {
@@ -826,7 +1022,7 @@ export default defineConfig({
           },
         },
       },
-    },
+    }, */
     outline: {
       level: [2, 4],
       label: "En esta página",
